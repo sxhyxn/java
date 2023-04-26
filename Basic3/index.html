@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var 민숙=5;
+        민숙++;  //1 더하기
+        document.write(민숙+ '<br>')  //6
+
+        민숙=민숙+2;
+        document.write(민숙+ '<br>')  //8
+        
+        민숙+=4; //민숙=민숙+4
+        document.write(민숙+ '<br>')  //12
+
+        var 철수=5;
+        철수=철수+4;
+        document.write(철수+ '<br>')  //9
+
+        var 철민=7;
+        철민+=3; //철민=철민+3
+        document.write(철민+ '<br>')  //10
+
+        var 철식=9;
+        철식+=9; //철식이에게 9를 더해서 다시 철식이한테 주기
+        document.write(철식+ '<br>')  //18
+
+        var 일동=9;
+        일동-=3; //일동=일동-3
+        document.write(일동+ '<br>')  //6
+
+        var 이동=8;
+        이동--; //1 빼기
+        document.write(이동+ '<br>')  //7
+    </script>
+
+
+    <script>
+        //var, let, const 키워드(변수 만들 때 사용)
+        
+        var 삼동=3;
+        document.write(삼동+ '<br>')  //3
+        삼동=4;
+        document.write(삼동+ '<br>')  //4
+        var 삼동=30;
+        document.write(삼동+ '<br>')  //30
+
+        let 사동=5;
+        // let은 let을 쓰고 이름 중복사용 불가 let 사동=6; 적었을 시에 빨간 줄 나옴
+        사동=25; //다른 수를 할당해서 변수의 데이터 변경은 가능
+        document.write(사동+ '<br>')
+
+        let 육동; //변수 선언 안 해줘도 가능
+        const 오동=3.14; //변수를 선언하자마자 값을 할당해줘야함
+        //오동=7; 처럼 다른값을 할당할 수 없음(빨간줄은 안나와도 오류뜸)
+        document.write(오동+ '<br>')
+        //const(constant상수)키워드로 선언하는 변수는 데이터를 변경할 수 없어서 변수라고 부르지 않고 상수(변하지 않는 값)라고 부름.
+        //var, let은 변수선언 const는 상수선언
+
+        /* document.write(콜라)  //var전에 쓰면 화면에 undefind로 뜸 */
+        var 콜라=30;
+        document.write(콜라)
+
+        /* document.write(사이다)  //var전에 쓰면 undefind로 뜨진 않지만 오류 */
+        let 사이다=50;
+        document.write(사이다)
+
+        /* document.write(환타)  //var전에 쓰면 undefind로 뜨진 않지만 오류 */
+        const 환타=60;
+        document.write(환타)
+
+
+    </script>
+</body>
+</html>

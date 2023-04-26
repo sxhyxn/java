@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //변수:데이터 저장 공간
+        //var 철수=10;
+        //var 영희="javaScript";
+        //var 명수= true;
+        
+        var 철수=10,
+            영희="javaScript",
+            명수= true;
+
+        var 텍스트1="자바스크립트";
+        var 텍스트2="기초";
+        document.write(텍스트1+텍스트2)  //자바스크립트기초
+
+        var 민수="2";
+        var 민숙=4
+        var 말숙=3
+        document.write("<br>")
+        document.write(민수+민숙) //"24"
+        document.write("<br>")
+        document.write(민숙+ 민수) //"42"
+        document.write("<br>")
+        document.write(민숙+말숙+민수)  //"72"
+        document.write("<br>")
+        document.write(민수+민숙+말숙) //"243"
+        document.write("<br>")
+        /* 문자화 숫자는 +를 제외한 다른 연산자에서는
+        숫자로 변환 */
+        document.write(민수-민숙+"<br>")  //-2
+        document.write(민수*민숙+"<br>")  //8
+        document.write(민숙/민수+"<br>")  //2 (나누기 후 목의 값)
+
+        var 일동=5;
+        var 이동=2;
+        document.write(일동%이동+"<br>")  //1 (나누기 후 나머지의 값)
+        
+        var 후치=3;
+        후치++; //다음에 1 더해짐
+        document.write(후치+"<br>") //4
+
+        var 전치=3;
+        ++전치; //바로 1 더해짐
+        document.write(전치+"<br>") //4
+
+        var 오동=5;
+        오동=오동+1; //우측 내용이 무조건 좌측 값이 됨
+        document.write(오동)  //6
+
+
+    </script>
+</body>
+</html>
